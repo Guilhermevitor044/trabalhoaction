@@ -1,0 +1,10 @@
+name: Data
+
+on: [push]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello World
+        run: date
