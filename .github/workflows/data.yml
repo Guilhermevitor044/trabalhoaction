@@ -3,8 +3,8 @@ name: Data
 on: [push]
 
 jobs:
-  say-hello:
+  say-data:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello World
+      - name: Data
         run: date
