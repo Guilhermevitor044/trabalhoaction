@@ -1,4 +1,4 @@
-name: Contar arquivos HTML - teste
+name: Contar arquivos HTML
 
 on: [push]
 
@@ -7,4 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo "Arquivos HTML: $(ls *.html | wc -l)"
+      - name: Contar arquivos HTML
+        run: echo "Arquivos HTML: $(ls *.html | wc -l)"
