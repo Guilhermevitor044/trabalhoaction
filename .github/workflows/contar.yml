@@ -1,0 +1,10 @@
+name: Contar arquivos HTML
+
+on: [push]
+
+jobs:
+  contarhtml:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Arquivos HTML: $(ls *.html | wc -l)"
