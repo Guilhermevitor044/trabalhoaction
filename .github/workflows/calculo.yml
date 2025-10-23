@@ -1,0 +1,10 @@
+name: Calculo
+
+on: [push]
+
+jobs:
+  soma:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Calcular 2 + 2
+        run: echo $((2+2))
